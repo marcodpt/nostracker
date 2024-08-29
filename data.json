@@ -1,0 +1,17 @@
+[
+  {
+    "title": "damus",
+    "description": "iOS nostr client",
+    "repository": "https://github.com/damus-io/damus",
+    "website": "https://damus.io/",
+    "nips": [1, 4, 8, 10, 12, 19, 21, 25, 42, 56],
+    "tags": ["clients", "mobile", "iOS"]
+  }, {
+    "title": "",
+    "description": "",
+    "repository": "",
+    "website": "",
+    "nips": [],
+    "tags": ["clients", "mobile"]
+  }
+]
