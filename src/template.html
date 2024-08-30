@@ -35,13 +35,23 @@
       <div class="card my-3" each:="posts">
         <div class="card-body">
           <h5 class="card-title" text:="title"></h5>
-          <p class="card-text" text:="description"></p>
           <p class="card-text">
-            <a class="btn btn-info" if:="website" href:="website">
-              <i href="fa-solid fa-globe"></i>
+            <template text:="description"></template>
+            <a
+              class="btn btn-info btn-sm"
+              if:="website"
+              href:="website"
+              target="_blank"
+            >
+              <i class="fa-solid fa-globe"></i>
             </a>
-            <a class="btn btn-dark" if:="repository" href:="repository">
-              <i href="fa-brands fa-github"></i>
+            <a
+              class="btn btn-dark btn-sm"
+              if:="repository"
+              href:="repository"
+              target="_blank"
+            >
+              <i class="fa-solid fa-code-branch"></i>
             </a>
             <template with:="taxonomies">
               <template with:="nips">

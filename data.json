@@ -1,17 +1,11 @@
 [
   {
-    "title": "damus",
-    "description": "iOS nostr client",
-    "repository": "https://github.com/damus-io/damus",
-    "website": "https://damus.io/",
+    "gh": "damus-io/damus",
     "nips": [1, 4, 8, 10, 12, 19, 21, 25, 42, 56],
-    "tags": ["clients", "mobile", "iOS"]
+    "category": "clients"
   }, {
-    "title": "amethyst",
-    "description": "Nostr client for Android",
-    "repository": "https://github.com/vitorpamplona/amethyst",
-    "website": "",
+    "gh": "vitorpamplona/amethyst",
     "nips": [1, 2, 3, 4, 5, 6],
-    "tags": ["clients", "mobile", "Android"]
+    "category": "clients"
   }
 ]

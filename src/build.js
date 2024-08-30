@@ -1,22 +1,71 @@
+async function get (gh, path) {
+  const url = `https://api.github.com/repos/${gh}${path}`
+  const res = await fetch(url)
+  if (res.status != 200) {
+    throw url
+  }
+  const data = await res.json()
+  return data
+}
+
 const data = JSON.parse(Deno.readTextFileSync('data.json'))
+Promise.all(data.map(({gh}) => get(gh, ''))).then(GH => {
+  data.forEach((repo, i) => {
+    delete repo.gh
+    repo.nips = repo.nips.map(nip => 'NIP'+String(nip).padStart(2, '0'))
+    repo.title = GH[i].name
+    repo.description = GH[i].description
+    repo.repository = GH[i].html_url
+    repo.website = GH[i].homepage
+    repo.stars = GH[i].stargazers_count
+    repo.language = GH[i].language
+    repo.forks = GH[i].forks_count
+    repo.issues = GH[i].open_issues
+    repo.license = GH[i].license.spdx_id
+    repo.tags = GH[i].topics.join(', ')
+    repo.since = GH[i].created_at
+    repo.last = GH[i].pushed_at
+  })
+  data.sort((a, b) =>
+    a.stars > b.stars ? -1 :
+    a.stars < b.stars ? 1 : 0
+  )
+  console.log(data)
+})
 
-Deno.mkdirSync('docs', {recursive: true})
 
+/*const genFile = ({title, description, category}) => {
+  Deno.mkdirSync('docs/'+category, {recursive: true})
+  Deno.writeTextFileSync(`docs/${category}/index.html`, `<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>${title}</title>
+    </head>
+    <body>
+      <p>${description}</p>
+    </body>
+  </html>`)
+}
 
-Deno.writeTextFileSync(`docs/index.html`, `<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>NosTracker</title>
-  </head>
-  <body>
-    <p>A website dedicated to collecting information from the nostr network.</p>
-  </body>
-</html>`)
+genFile({
+  category: '',
+  title: 'NosTracker',
+  description: 'A website dedicated to collecting information from the nostr network.'
+})*/
 
-data.forEach(({title, description, ...M}, i) => {
-  M.nips = M.nips.map(nip => 'NIP'+String(nip).padStart(2, '0'))
+/*data.forEach(({title, description, category, nips, repo, owner}, i) => {
+  const M = {}
 
-  Deno.writeTextFileSync(`docs/${title}.html`, `<!DOCTYPE html>
+  M.nips = nips.map(nip => 'NIP'+String(nip).padStart(2, '0'))
+  console.log(data)
+
+  genFile({
+    category,
+    title: category,
+    description: ''
+  })
+
+  Deno.writeTextFileSync(`docs/${category}/${title}.html`, `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="index" content="${String(i).padStart(4, '0')}">
@@ -30,5 +79,4 @@ data.forEach(({title, description, ...M}, i) => {
     <p>${description}</p>
   </body>
 </html>`)
-})
-
+})*/

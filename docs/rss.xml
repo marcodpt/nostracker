@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-  <channel>
-    <title>NosTracker</title>
-    <description>A website dedicated to collecting information from the nostr network.</description>
-    <link></link></channel>
-</rss>

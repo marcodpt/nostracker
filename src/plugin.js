@@ -1,3 +1,4 @@
+
 export default ({
   sort: ['index'],
   taxonomies: ['nips', 'tags'],
@@ -8,6 +9,8 @@ export default ({
     website: ''
   },
   render: Post => {
-    Post.description = Post.main.querySelector('p')?.textContent
+    Object.keys(Post.meta).forEach(k => {
+      Post[k] = Post.meta[k]
+    })
   }
 })
