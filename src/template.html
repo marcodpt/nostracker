@@ -24,35 +24,79 @@
           href:="path"
           text:="title"
         ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls=".navbar-collapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li each:="posts" class="nav-item">
+              <a
+                class="nav-link"
+                href:="path"
+                text:="title"
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <main class="container mx-auto my-5">
+    <section class="container mx-auto my-5" style="max-width:600px">
+      <h1 class="title" text:="title"></h1>
+    </section>
+    <main class="container mx-auto my-5" style="max-width:600px">
     </main>
-    <div
-      class="container"
-      style="max-width:600px"
-    >
+    <div class="container" style="max-width:600px">
       <div class="card my-3" each:="posts">
         <div class="card-body">
-          <h5 class="card-title" text:="title"></h5>
-          <p class="card-text">
-            <template text:="description"></template>
+          <h5 class="card-title">
             <a
-              class="btn btn-info btn-sm"
-              if:="website"
-              href:="website"
-              target="_blank"
-            >
-              <i class="fa-solid fa-globe"></i>
-            </a>
-            <a
-              class="btn btn-dark btn-sm"
-              if:="repository"
-              href:="repository"
-              target="_blank"
-            >
-              <i class="fa-solid fa-code-branch"></i>
-            </a>
+              href:="path"
+              class="text-reset text-decoration-none"
+              text:="title"
+            ></a>
+            <span if:="repository" class="float-end">
+              <template with:="taxonomies">
+                <template each:="language">
+                  <a
+                    href:="path"
+                    text:="title"
+                    class="badge text-bg-secondary text-decoration-none"
+                  ></a>
+                </template>
+              </template>
+              <a
+                href:="repository"
+                class="badge text-bg-warning text-decoration-none"
+              >
+                <i class="fa-solid fa-star"></i>
+                <template text:="stars"></template>
+              </a>
+              <a
+                href:="repository"
+                class="badge text-bg-danger text-decoration-none"
+              >
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <template text:="issues"></template>
+              </a>
+              <a
+                href:="repository"
+                class="badge text-bg-light text-decoration-none"
+              >
+                <i class="fa-solid fa-book"></i>
+                <template text:="license"></template>
+              </a>
+            </span>
+          </h5>
+          <p if:="repository" class="card-text">
+            <div text:="description"></div>
             <template with:="taxonomies">
               <template with:="nips">
                 <br if:="0"/>
@@ -61,7 +105,7 @@
                 <a
                   href:="path"
                   text:="title"
-                  class="badge bg-info text-decoration-none link-light me-1"
+                  class="badge text-bg-info text-decoration-none"
                 ></a>
               </template>
             </template>
@@ -73,7 +117,7 @@
                 <a
                   href:="path"
                   text:="title"
-                  class="badge bg-dark text-decoration-none link-light me-1"
+                  class="badge text-bg-dark text-decoration-none"
                 ></a>
               </template>
             </template>
@@ -81,20 +125,5 @@
         </div>
       </div>
     </div>
-    <footer
-      with:="settings"
-      class="mt-auto p-5 bg-light text-center"
-    >
-      <div with:="icons" class="mt-2">
-        <a
-          each:=""
-          class="text-reset text-decoration-none mx-1 bg-transparent"
-          href:="url"
-          title:="title"
-        >
-          <i class:="icon"></i>
-        </a>
-      </div>
-    </footer>
   </body>
 </html>

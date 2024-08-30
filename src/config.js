@@ -5,9 +5,9 @@ export default ({
   template: Deno.readTextFileSync('src/template.html'),
   title: 'NosTracker',
   description: 'A website dedicated to collecting information from the nostr network.',
-  url: '',
+  url: 'http://localhost:3000/',
   dir: 'docs',
-  rss: true,
+  rss: false,
   settings: {
     icons: [
       {
@@ -19,11 +19,6 @@ export default ({
         title: 'GitHub',
         icon: 'fa-brands fa-github',
         url: 'https://github.com/marcodpt/nostracker'
-      },
-      {
-        title: 'Rss Feed',
-        icon: 'fa-solid fa-square-rss',
-        url: 'rss.xml'
       }
     ]
   }
