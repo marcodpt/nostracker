@@ -37,7 +37,7 @@ Promise.all(data.map(({gh}) => get(gh, ''))).then(GH => {
     repo.language = GH[i].language
     repo.forks = GH[i].forks_count
     repo.issues = GH[i].open_issues
-    repo.license = GH[i].license.spdx_id
+    repo.license = GH[i].license?.spdx_id
     repo.tags = GH[i].topics.join(', ')
     repo.since = GH[i].created_at
     repo.last = GH[i].pushed_at
