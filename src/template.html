@@ -103,6 +103,15 @@
           </h5>
           <p if:="repository" class="card-text">
             <div text:="description"></div>
+            <div if:="hasDate">
+              <span
+                if:="since"
+              >Created At: <template text:="since"></template></span>
+              <span
+                if:="last"
+                class="float-end"
+              >Last Commit: <template text:="last"></template></span>
+            </div>
             <template with:="taxonomies">
               <template with:="nips">
                 <br if:="0"/>

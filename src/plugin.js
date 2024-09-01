@@ -27,5 +27,6 @@ export default ({
       Post.last = Post.last.substr(0, 10)
     }
     Post.count = Post.posts.length
+    Post.hasDate = !!(Post.since || Post.last)
   }
 })
