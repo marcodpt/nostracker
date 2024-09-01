@@ -12,10 +12,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      id="theme"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/cyborg/bootstrap.min.css"
     />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -23,30 +22,27 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="min-vh-100 d-flex flex-column">
     <nav
       class="
       navbar
       navbar-expand-lg
-      navbar-light
-      bg-light
+      navbar-dark
+      bg-info
     "
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">NosTracker</a>
-        <button
-          class="navbar-toggler"
-          type="button"
+        <a
+          class="navbar-toggler border-0"
           data-bs-toggle="collapse"
           data-bs-target=".navbar-collapse"
-          aria-controls=".navbar-collapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          role="button"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </a>
         <div class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="language/index.html">language</a>
             </li>
@@ -66,17 +62,17 @@
     <section class="container mx-auto my-5" style="max-width:600px">
       <h1 class="title">NIP16</h1>
     </section>
-    <main class="container mx-auto my-5" style="max-width:600px">
+    <main class="container mx-auto my-5 d-none" style="max-width:600px">
     </main>
     <div class="container" style="max-width:600px">
       <div class="card my-3">
         <div class="card-body">
-          <h5 class="card-title">
+          <h4 class="card-title">
             <a
               href="https://github.com/vitorpamplona/amethyst"
               class="text-reset text-decoration-none"
             >amethyst</a>
-            <span class="float-end">
+            <span class="float-end fs-6">
               <a
                 href="language/kotlin/index.html"
                 class="badge text-decoration-none text-bg-primary"
@@ -92,7 +88,7 @@
               </a>
               <a
                 href="https://github.com/vitorpamplona/amethyst"
-                class="badge text-decoration-none text-bg-dark"
+                class="badge text-decoration-none text-bg-light"
               >
                 <i class="fa-solid fa-code-fork"></i>
                 <span>152</span>
@@ -106,16 +102,17 @@
               </a>
               <a
                 href="https://github.com/vitorpamplona/amethyst"
-                class="badge text-decoration-none text-bg-light"
+                class="badge text-decoration-none text-bg-dark"
               >
                 <i class="fa-solid fa-book"></i>
                 <span>MIT</span>
               </a>
             </span>
-          </h5>
+          </h4>
+          <br/>
           <p class="card-text">
           </p>
-          <div>Nostr client for Android</div>
+          <p class="lead">Nostr client for Android</p>
           <div>
             <span>Created At: 2023-01-11</span>
             <span class="float-end">Last Commit: 2024-09-01</span>
@@ -498,5 +495,24 @@
         </div>
       </div>
     </div>
+    <footer class="text-bg-info mt-auto">
+      <div class="container pt-5 pb-4">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a
+              href="https://github.com/marcodpt/nostracker"
+              class="nav-link px-2 text-reset"
+              title="Github repository of this project."
+            >
+              <i class="fa-brands fa-github"></i>
+              Fork me at GitHub
+              <sup>
+                <i class="small fa-solid fa-arrow-up-right-from-square"></i>
+              </sup>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
