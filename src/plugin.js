@@ -20,6 +20,12 @@ export default ({
     Object.keys(Post.meta).forEach(k => {
       Post[k] = Post.meta[k]
     })
+    if (Post.since) {
+      Post.since = Post.since.substr(0, 10)
+    }
+    if (Post.last) {
+      Post.last = Post.last.substr(0, 10)
+    }
     Post.count = Post.posts.length
   }
 })

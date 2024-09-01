@@ -5,7 +5,27 @@
     "category": "clients"
   }, {
     "gh": "vitorpamplona/amethyst",
-    "nips": [1, 2, 3, 4, 5, 6],
+    "nips": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 27, 28, 30, 31, 33, 34, 36, 37, 38, 39, 40, 42, 44, 47, 49, 50, 51, 53, 54, 55, 56, 57, 58, 59, 69, 71, 72, 84, 88, 89, 90, 92, 94, 95, 96, 98, 99],
+    "category": "clients"
+  }, {
+    "gh": "PrimalHQ/primal-web-app",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "YakiHonne/yakihonne-web-app",
+    "nips": [1, 7, 19, 51, 23, 9, 12, 21, 2, 57, 65],
+    "category": "clients"
+  }, {
+    "gh": "v0l/snort",
+    "nips": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 13, 18, 19, 21, 23, 25, 26, 27, 28, 30, 31, 36, 38, 42, 44, 46, 47, 50, 51, 53, 57, 58, 59, 65, 75, 78, 94, 96, 98],
+    "category": "clients"
+  }, {
+    "gh": "irislib/iris-messenger",
+    "nips": [1, 2, 3, 4, 5, 7, 8, 9, 10, 19, 20, 25, 33, 42, 50, 57],
+    "category": "clients"
+  }, {
+    "gh": "coracle-social/coracle",
+    "nips": [50, 5, 65, 32, 89, 32, 99, 52, 87, 72, 89, 89, 32, 17, 4, 24, 96, 51, 42, 51],
     "category": "clients"
   }
 ]

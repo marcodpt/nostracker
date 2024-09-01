@@ -11,11 +11,6 @@ export default ({
   settings: {
     icons: [
       {
-        title: 'Home Page',
-        icon: 'fa-solid fa-house',
-        url: ''
-      },
-      {
         title: 'GitHub',
         icon: 'fa-brands fa-github',
         url: 'https://github.com/marcodpt/nostracker'
