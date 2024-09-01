@@ -74,6 +74,7 @@
               </template>
               <a
                 href:="repository"
+                if:="stars"
                 class="badge text-bg-warning text-decoration-none"
               >
                 <i class="fa-solid fa-star"></i>
@@ -81,6 +82,15 @@
               </a>
               <a
                 href:="repository"
+                if:="forks"
+                class="badge text-bg-dark text-decoration-none"
+              >
+                <i class="fa-solid fa-code-fork"></i>
+                <template text:="forks"></template>
+              </a>
+              <a
+                href:="repository"
+                if:="issues"
                 class="badge text-bg-danger text-decoration-none"
               >
                 <i class="fa-solid fa-circle-exclamation"></i>
@@ -88,6 +98,7 @@
               </a>
               <a
                 href:="repository"
+                if:="license"
                 class="badge text-bg-light text-decoration-none"
               >
                 <i class="fa-solid fa-book"></i>
@@ -105,7 +116,7 @@
                 <a
                   href:="path"
                   text:="title"
-                  class="badge text-bg-info text-decoration-none"
+                  class="badge text-bg-success text-decoration-none"
                 ></a>
               </template>
             </template>
