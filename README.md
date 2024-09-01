@@ -42,15 +42,17 @@ accepted.
 In other cases, or if you need a new category, open an issue.
 
 ## 🔧 TODO
+ - Add as many repositories as I can.
+ - Add information about archived repositories.
+ - Add the version of each repository.
+ - Add contributors to each repository.
+ - Add RSS feed with updates.
  - Get an auth token from github for more API queries.
  - Enable other git hosts like
 [gitlab](https://about.gitlab.com/),
 [codeberg](https://codeberg.org/),
 [sourcehut](https://sourcehut.org/),
 etc.
- - Add the version of each repository.
- - Add contributors to each repository.
- - Add RSS feed with updates.
  - Improve the SSG and the template engine and better explain their use.
  - Integration of the website into the nostr network.
  - Enable comments through nostr.

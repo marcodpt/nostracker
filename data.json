@@ -27,5 +27,69 @@
     "gh": "coracle-social/coracle",
     "nips": [50, 5, 65, 32, 89, 32, 99, 52, 87, 72, 89, 89, 32, 17, 4, 24, 96, 51, 42, 51],
     "category": "clients"
+  }, {
+    "gh": "unclebob/more-speech",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "planetary-social/nos",
+    "nips": [1, 2, 5, 8, 9, 10, 11, 18, 19, 23, 25, 27, 32, 40, 42, 50, 51, 56, 65, 96, 98],
+    "category": "clients"
+  }, {
+    "gh": "fiatjaf/noscl",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "mattn/algia",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "monlovesmango/astral",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "fiatjaf/branle",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "mikedilger/gossip",
+    "nips": [1, 2, 4, 5, 8, 9, 10, 11, 13, 14, 17, 18, 19, 21, 23, 24, 25, 26, 27, 31, 36, 42, 44, 46, 48, 49, 51, 57, 59, 65],
+    "category": "clients"
+  }, {
+    "gh": "vishalxl/nostr_console",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "KoalaSat/nostros",
+    "nips": [5, 42],
+    "category": "clients"
+  }, {
+    "gh": "hzrd149/nostrudel",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "lovvtide/satellite-web",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "vilm3r/sendstr-web",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "Myzel394/locus",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "lnbits/nostrmarket",
+    "nips": [15, 33, 4, 99],
+    "category": "clients"
+  }, {
+    "gh": "PlebeianTech/plebeian-market",
+    "nips": [15, 99],
+    "category": "clients"
+  }, {
+    "gh": "MostroP2P/mostro",
+    "nips": [],
+    "category": "clients"
   }
 ]
