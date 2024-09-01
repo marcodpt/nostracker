@@ -63,47 +63,37 @@
               text:="title"
             ></a>
             <span if:="repository" class="float-end">
-              <template with:="taxonomies">
-                <template each:="language">
-                  <a
-                    href:="path"
-                    text:="title"
-                    class="badge text-bg-secondary text-decoration-none"
-                  ></a>
-                </template>
-              </template>
-              <a
+              <view-badge
+                with:="taxonomies"
+                each:="language"
+                href:="path"
+                info:="title"
+                context="primary"
+              ></view-badge>
+              <view-badge
                 href:="repository"
-                if:="stars"
-                class="badge text-bg-warning text-decoration-none"
-              >
-                <i class="fa-solid fa-star"></i>
-                <template text:="stars"></template>
-              </a>
-              <a
+                info:="stars"
+                context="warning"
+                icon="star"
+              ></view-badge>
+              <view-badge
                 href:="repository"
-                if:="forks"
-                class="badge text-bg-dark text-decoration-none"
-              >
-                <i class="fa-solid fa-code-fork"></i>
-                <template text:="forks"></template>
-              </a>
-              <a
+                info:="forks"
+                context="dark"
+                icon="code-fork"
+              ></view-badge>
+              <view-badge
                 href:="repository"
-                if:="issues"
-                class="badge text-bg-danger text-decoration-none"
-              >
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <template text:="issues"></template>
-              </a>
-              <a
+                info:="issues"
+                context="danger"
+                icon="circle-exclamation"
+              ></view-badge>
+              <view-badge
                 href:="repository"
-                if:="license"
-                class="badge text-bg-light text-decoration-none"
-              >
-                <i class="fa-solid fa-book"></i>
-                <template text:="license"></template>
-              </a>
+                info:="license"
+                context="light"
+                icon="book"
+              ></view-badge>
             </span>
           </h5>
           <p if:="repository" class="card-text">
@@ -112,29 +102,36 @@
               <template with:="nips">
                 <br if:="0"/>
               </template>
-              <template each:="nips">
-                <a
-                  href:="path"
-                  text:="title"
-                  class="badge text-bg-success text-decoration-none"
-                ></a>
-              </template>
-            </template>
-            <template with:="taxonomies">
+              <view-badge
+                each:="nips"
+                href:="path"
+                info:="title"
+                context="success"
+              ></view-badge>
               <template with:="tags">
                 <br if:="0"/>
               </template>
-              <template each:="tags">
-                <a
-                  href:="path"
-                  text:="title"
-                  class="badge text-bg-dark text-decoration-none"
-                ></a>
-              </template>
+              <view-badge
+                each:="tags"
+                href:="path"
+                info:="title"
+                context="info"
+              ></view-badge>
             </template>
           </p>
         </div>
       </div>
     </div>
+    <template id="view-badge">
+      <a
+        href:="href"
+        if:="info"
+        class="badge text-decoration-none text-bg-"
+        class:="context"
+      >
+        <i if:="icon" class="fa-solid fa-" class:="icon"></i>
+        <span text:="info"></span>
+      </a>
+    </template>
   </body>
 </html>
