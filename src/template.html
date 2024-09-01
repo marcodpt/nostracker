@@ -62,7 +62,12 @@
               class="text-reset text-decoration-none"
               text:="title"
             ></a>
-            <span if:="repository" class="float-end">
+            <span class="float-end">
+              <view-badge
+                href:="path"
+                info:="count"
+                context="dark"
+              ></view-badge>
               <view-badge
                 with:="taxonomies"
                 each:="language"
