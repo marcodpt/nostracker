@@ -34,7 +34,7 @@
         </a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
-            <li each:="posts" class="nav-item">
+            <li each:="posts" if:="isTaxonomy" class="nav-item">
               <a
                 class="nav-link"
                 href:="path"
@@ -55,7 +55,7 @@
     <main class="container mx-auto my-5 d-none" style="max-width:600px">
     </main>
     <div class="container" style="max-width:600px">
-      <div class="card my-3" each:="posts">
+      <div class="card my-3" each:="posts" not:="isTaxonomy">
         <div class="card-body">
           <h4 class="card-title">
             <a
