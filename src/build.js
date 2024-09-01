@@ -43,22 +43,24 @@ Promise.all(data.map(({gh}) => get(gh, ''))).then(GH => {
     repo.last = GH[i].pushed_at
   })
 
-  const genFile = ({title, description, category}) => {
+  const genFile = ({title, category, ...M}) => {
     Deno.mkdirSync('docs/'+category, {recursive: true})
     Deno.writeTextFileSync(`docs/${category}/index.html`, `<!DOCTYPE html>
     <html lang="en">
       <head>
+        ${Object.keys(M).filter(k => M[k]).
+          map(k => `<meta name="${k}" content="${M[k]}">`
+        ).join('\n    ')}
         <title>${title}</title>
       </head>
-      <body>
-        <p>${description}</p>
-      </body>
+      <body></body>
     </html>`)
   }
 
   genFile({
     category: '',
     title: 'NosTracker',
+    icon: 'circle-nodes',
     description: 'A website dedicated to collecting information from the nostr network.'
   })
 

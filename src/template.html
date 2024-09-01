@@ -20,10 +20,10 @@
       bg-info
     ">
       <div class="container-fluid">
-        <a class="navbar-brand"
-          href:="path"
-          text:="title"
-        ></a>
+        <a class="navbar-brand" href:="path">
+          <i class="fa-solid fa-" class:="icon"></i>
+          <span text:="title"></span>
+        </a>
         <a
           class="navbar-toggler border-0"
           data-bs-toggle="collapse"
@@ -46,7 +46,11 @@
       </div>
     </nav>
     <section class="container mx-auto my-5" style="max-width:600px">
-      <h1 class="title" text:="title"></h1>
+      <h1 class="title">
+        <i if:="icon" class="fa-solid fa-" class:="icon"></i>
+        <template text:="title"></template>
+      </h1>
+      <p if:="description" class="lead" text:="description"></p>
     </section>
     <main class="container mx-auto my-5 d-none" style="max-width:600px">
     </main>
@@ -63,7 +67,7 @@
               <view-badge
                 href:="path"
                 info:="count"
-                context="dark"
+                context="dark fs-5"
               ></view-badge>
               <view-badge
                 with:="taxonomies"

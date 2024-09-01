@@ -3,6 +3,7 @@ export default ({
   sort: ['-stars', '-since', 'title'],
   taxonomies: ['nips', 'tags', 'language'],
   default: {
+    icon: '',
     description: '',
     tags: '',
     nips: '',
@@ -30,5 +31,7 @@ export default ({
     Post.hasDate = !!(Post.since || Post.last)
     Post.ref = Post.count ? Post.path :
       Post.website || Post.repository || ''
+    Post.icon = Post.icon || ''
+    Post.description = Post.description || ''
   }
 })
