@@ -28,5 +28,7 @@ export default ({
     }
     Post.count = Post.posts.length
     Post.hasDate = !!(Post.since || Post.last)
+    Post.ref = Post.count ? Post.path :
+      Post.website || Post.repository || ''
   }
 })
