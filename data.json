@@ -119,5 +119,29 @@
     "gh": "metasikander/s0str",
     "nips": [],
     "category": "relays"
+  }, {
+    "gh": "nbd-wtf/go-nostr",
+    "nips": [4, 5, 6, 10, 11, 13, 19, 29, 31, 34, 42, 44, 46, 49, 52, 53, 54, 86, 94, 96],
+    "category": "libraries"
+  }, {
+    "gh": "Kukks/NNostr",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "nbd-wtf/nostr-tools",
+    "nips": [4, 5, 6, 7, 10, 11, 13, 18, 19, 49, 21, 25, 27, 28, 29, 30, 39, 40, 42, 44, 46, 47, 49, 57, 58, 75, 94, 96, 98, 99],
+    "category": "libraries"
+  }, {
+    "gh": "jeffthibault/python-nostr",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "fiatjaf/relayer",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "rust-nostr/nostr",
+    "nips": [],
+    "category": "libraries"
   }
 ]
