@@ -1,5 +1,6 @@
 import {existsSync} from "https://deno.land/std@0.224.0/fs/exists.ts";
 import {parse} from '../../hippo/js/lib.js'
+import save from '../../hippo/js/save.js'
 
 const nips = {
   'nip01': 'Basic protocol flow description',
@@ -75,11 +76,15 @@ Object.keys(nips).forEach(nip => {
   const p = `docs/nips/${nip}/index.html`
   if (existsSync(p)) {
     const doc = parse(p)
-    console.log(doc.head.querySelector('title').outerHTML)
+    const meta = doc.createElement('meta')
+    meta.setAttribute('name', 'description')
+    meta.setAttribute('content', nips[nip])
+    doc.head.insertBefore(meta, doc.head.querySelector('title'))
+    save(p, doc)
   }
 })
 
-async function get (gh, path) {
+/*async function get (gh, path) {
   const url = `https://api.github.com/repos/${gh}${path}`
   const res = await fetch(url)
   if (res.status != 200) {
@@ -162,4 +167,4 @@ Promise.all(data.map(({gh}) => get(gh, ''))).then(GH => {
   <body></body>
 </html>`)
   })
-})
+})*/
