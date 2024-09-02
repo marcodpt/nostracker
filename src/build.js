@@ -1,4 +1,83 @@
 import {existsSync} from "https://deno.land/std@0.224.0/fs/exists.ts";
+import {parse} from '../../hippo/js/lib.js'
+
+const nips = {
+  'nip01': 'Basic protocol flow description',
+  'nip02': 'Follow List',
+  'nip03': 'OpenTimestamps Attestations for Events',
+  'nip04': 'Encrypted Direct Message --- unrecommended: deprecated in favor of NIP-17',
+  'nip05': 'Mapping Nostr keys to DNS-based internet identifiers',
+  'nip06': 'Basic key derivation from mnemonic seed phrase',
+  'nip07': 'window.nostr capability for web browsers',
+  'nip08': 'Handling Mentions --- unrecommended: deprecated in favor of NIP-27',
+  'nip09': 'Event Deletion Request',
+  'nip10': 'Conventions for clients\' use of e and p tags in text events',
+  'nip11': 'Relay Information Document',
+  'nip13': 'Proof of Work',
+  'nip14': 'Subject tag in text events',
+  'nip15': 'Nostr Marketplace (for resilient marketplaces)',
+  'nip17': 'Private Direct Messages',
+  'nip18': 'Reposts',
+  'nip19': 'bech32-encoded entities',
+  'nip21': 'nostr: URI scheme',
+  'nip23': 'Long-form Content',
+  'nip24': 'Extra metadata fields and tags',
+  'nip25': 'Reactions',
+  'nip26': 'Delegated Event Signing',
+  'nip27': 'Text Note References',
+  'nip28': 'Public Chat',
+  'nip29': 'Relay-based Groups',
+  'nip30': 'Custom Emoji',
+  'nip31': 'Dealing with Unknown Events',
+  'nip32': 'Labeling',
+  'nip34': 'git stuff',
+  'nip35': 'Torrents',
+  'nip36': 'Sensitive Content',
+  'nip38': 'User Statuses',
+  'nip39': 'External Identities in Profiles',
+  'nip40': 'Expiration Timestamp',
+  'nip42': 'Authentication of clients to relays',
+  'nip44': 'Versioned Encryption',
+  'nip45': 'Counting results',
+  'nip46': 'Nostr Connect',
+  'nip47': 'Wallet Connect',
+  'nip48': 'Proxy Tags',
+  'nip49': 'Private Key Encryption',
+  'nip50': 'Search Capability',
+  'nip51': 'Lists',
+  'nip52': 'Calendar Events',
+  'nip53': 'Live Activities',
+  'nip54': 'Wiki',
+  'nip55': 'Android Signer Application',
+  'nip56': 'Reporting',
+  'nip57': 'Lightning Zaps',
+  'nip58': 'Badges',
+  'nip59': 'Gift Wrap',
+  'nip64': 'Chess (PGN)',
+  'nip65': 'Relay List Metadata',
+  'nip70': 'Protected Events',
+  'nip71': 'Video Events',
+  'nip72': 'Moderated Communities',
+  'nip73': 'External Content IDs',
+  'nip75': 'Zap Goals',
+  'nip78': 'Application-specific data',
+  'nip84': 'Highlights',
+  'nip89': 'Recommended Application Handlers',
+  'nip90': 'Data Vending Machines',
+  'nip92': 'Media Attachments',
+  'nip94': 'File Metadata',
+  'nip96': 'HTTP File Storage Integration',
+  'nip98': 'HTTP Auth',
+  'nip99': 'Classified Listings'
+}
+
+Object.keys(nips).forEach(nip => {
+  const p = `docs/nips/${nip}/index.html`
+  if (existsSync(p)) {
+    const doc = parse(p)
+    console.log(doc.head.querySelector('title').outerHTML)
+  }
+})
 
 async function get (gh, path) {
   const url = `https://api.github.com/repos/${gh}${path}`
