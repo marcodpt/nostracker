@@ -215,5 +215,9 @@
     "gh": "barkyq/gnost-relay",
     "nips": [1, 9, 11, 12, 15, 16, 20, 26, 28, 33, 40, 42],
     "category": "relays"
+  }, {
+    "gh": "vivganes/zapddit",
+    "nips": [1,2,5,7,27,47,57,72],
+    "category": "clients"
   }
 ]
