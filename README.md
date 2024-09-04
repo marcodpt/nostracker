@@ -18,7 +18,7 @@ And add the following object to the end of the array.
 {
   "gh": "owner/repo",
   "nips": [],
-  "category": "clients|relays|libraries"
+  "category": "clients|relays|libraries|bridges|extensions"
 }
 ```
 
