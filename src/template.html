@@ -138,23 +138,31 @@
         </div>
       </div>
     </div>
-    <footer class="text-bg-info mt-auto">
+    <footer with:="settings" if:="footer" class="text-bg-info mt-auto">
       <div class="container pt-5 pb-4">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
+        <p class="d-flex flex-wrap justify-content-between align-items-center">
+          <template each:="footer">
             <a
-              href="https://github.com/marcodpt/nostracker"
-              class="nav-link px-2 text-reset"
-              title="Github repository of this project."
+              if:="href"
+              href:="href"
+              class="text-reset text-decoration-none"
+              target="_blank"
+              title:="description"
             >
-              <i class="fa-brands fa-github"></i>
-              Fork me at GitHub
-              <sup>
-                <i class="small fa-solid fa-arrow-up-right-from-square"></i>
-              </sup>
+              <i if:="icon" class:="icon"></i>
+              <template if:="title" text:="title"></template>
+              <template if:="external" switch:="target">
+                <sup case="_blank">
+                  <i class:="external"></i>
+                </sup>
+              </template>
             </a>
-          </li>
-        </ul>
+            <span not:="href" title:="description">
+              <i if:="icon" class:="icon"></i>
+              <template if:="title" text:="title"></template>
+            </span>
+          </template>
+        </p>
       </div>
     </footer>
     <template id="view-badge">
