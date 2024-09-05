@@ -196,10 +196,6 @@
     "nips": [1, 2, 4, 5, 9, 11, 12, 15, 16, 17, 20, 22, 33, 40],
     "category": "relays"
   }, {
-    "gh": "Spl0itable/nosflare",
-    "nips": [1, 2, 4, 5, 9, 11, 12, 15, 16, 17, 20, 22, 33, 40],
-    "category": "relays"
-  }, {
     "gh": "johnny423/pyrelay",
     "nips": [1, 2, 4, 5, 6, 7, 9, 12, 15, 20],
     "category": "relays"
@@ -219,5 +215,89 @@
     "gh": "vivganes/zapddit",
     "nips": [1,2,5,7,27,47,57,72],
     "category": "clients"
+  }, {
+    "gh": "Nostrology/astro",
+    "nips": [1, 11, 15, 16, 20],
+    "category": "relays"
+  }, {
+    "gh": "Yonle/bostr2",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "coracle-social/bucket",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "mattn/cagliostr",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "haorendashu/cfrelay",
+    "nips": [1, 2, 5, 9, 11, 12, 33, 42, 45, 50, 95, 96, 98],
+    "category": "relays"
+  }, {
+    "gh": "soapbox-pub/ditto",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "barkyq/gnost-relay",
+    "nips": [1, 9, 11, 12, 15, 16, 20, 26, 28, 33, 40, 42],
+    "category": "relays"
+  }, {
+    "gh": "lpicanco/knostr",
+    "nips": [1, 2, 4, 9, 11, 12, 15, 16, 20, 28, 50],
+    "category": "relays"
+  }, {
+    "gh": "atdixon/me.untethr.nostr-relay",
+    "nips": [1, 2, 4, 11, 12, 15, 16, 20, 22, 42],
+    "category": "relays"
+  }, {
+    "gh": "monty888/monstr",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "coracle-social/multiplextr",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "lebrunel/nex",
+    "nips": [1, 2, 4, 9, 11, 12, 13, 15, 16, 20, 22, 26, 28, 33, 40],
+    "category": "relays"
+  }, {
+    "gh": "atrifat/nostr-filter-relay",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "mattn/nostr-relay",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "avlo/superconductor",
+    "nips": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 14, 16, 18, 19, 20, 21, 22, 25, 27, 28, 30, 31, 33, 36, 38, 39, 42, 46, 48, 52, 53, 56, 57, 58, 89, 99],
+    "category": "relays"
+  }, {
+    "gh": "UTXOnly/nostpy-relay",
+    "nips": [1, 2, 4, 9, 11, 15, 16, 25, 50, 99],
+    "category": "relays"
+  }, {
+    "gh": "Giszmo/NostrPostr",
+    "nips": [1, 2, 4, 9, 11, 12, 15, 16],
+    "category": "relays"
+  }, {
+    "gh": "xbol0/nostring",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "Aseman-Land/QNostr",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "lontivero/Nostra",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "pedro-vicente/nostr_client_relay",
+    "nips": [],
+    "category": "relays"
   }
 ]
