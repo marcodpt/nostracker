@@ -11,18 +11,19 @@ export default ({
   rss: false,
   settings: {
     external: 'small fa-solid fa-arrow-up-right-from-square',
-    footer: [
-      {
+    footer: {
+      build: {
         icon: 'fa-solid fa-clock',
         title: 'Last built: '+new Date().toISOString(),
         description: 'Date and time when the site was last generated.'
-      }, {
+      },
+      repo: {
         icon: 'fa-solid fa-code-branch',
         title: 'Repository',
         description: 'The repository where this project\'s code is hosted.',
         href: 'https://github.com/marcodpt/nostracker',
         target: '_blank'
       }
-    ]
+    }
   }
 })

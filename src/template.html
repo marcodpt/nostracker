@@ -139,30 +139,27 @@
       </div>
     </div>
     <footer with:="settings" if:="footer" class="text-bg-info mt-auto">
-      <div class="container pt-5 pb-4">
-        <p class="d-flex flex-wrap justify-content-between align-items-center">
-          <template each:="footer">
-            <a
-              if:="href"
-              href:="href"
-              class="text-reset text-decoration-none"
-              target="_blank"
-              title:="description"
-            >
-              <i if:="icon" class:="icon"></i>
-              <template if:="title" text:="title"></template>
-              <template if:="external" switch:="target">
-                <sup case="_blank">
-                  <i class:="external"></i>
-                </sup>
-              </template>
-            </a>
-            <span not:="href" title:="description">
-              <i if:="icon" class:="icon"></i>
-              <template if:="title" text:="title"></template>
-            </span>
+      <div with:="footer" class="container pt-5 pb-4">
+        <span with:="build" not:="href" title:="description">
+          <i if:="icon" class:="icon"></i>
+          <template if:="title" text:="title"></template>
+        </span>
+        <a
+          with:="repo"
+          if:="href"
+          href:="href"
+          class="text-reset text-decoration-none float-end"
+          target="_blank"
+          title:="description"
+        >
+          <i if:="icon" class:="icon"></i>
+          <template if:="title" text:="title"></template>
+          <template if:="external" switch:="target">
+            <sup case="_blank">
+              <i class:="external"></i>
+            </sup>
           </template>
-        </p>
+        </a>
       </div>
     </footer>
     <template id="view-badge">
