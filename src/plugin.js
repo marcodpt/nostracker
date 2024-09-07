@@ -1,7 +1,7 @@
 
 export default ({
   sort: ['-stars', '-since', 'title'],
-  taxonomies: ['nips', 'tags', 'language'],
+  taxonomies: ['nips', 'tags', 'language', 'license'],
   default: {
     icon: '',
     description: '',

@@ -107,8 +107,10 @@
                 icon="circle-exclamation"
               ></view-badge>
               <view-badge
-                href:="repository"
-                info:="license"
+                with:="taxonomies"
+                each:="license"
+                href:="path"
+                info:="title"
                 context="dark"
                 icon="book"
               ></view-badge>
