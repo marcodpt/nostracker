@@ -292,12 +292,160 @@
     "nips": [],
     "category": "relays"
   }, {
-    "gh": "lontivero/Nostra",
-    "nips": [],
-    "category": "relays"
-  }, {
     "gh": "pedro-vicente/nostr_client_relay",
     "nips": [],
     "category": "relays"
+  }, {
+    "gh": "bitvora/wot-relay",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "lnbits/arduino-nostr",
+    "nips": [1, 4],
+    "category": "libraries"
+  }, {
+    "gh": "anasfik/nostr",
+    "nips": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14, 15, 18, 19, 21, 23, 24, 25, 27, 28, 30, 31, 32, 36, 38, 39, 40, 45, 47, 48, 50, 51, 52, 53, 56, 57, 58, 72, 75, 78, 84, 89, 94, 98, 99],
+    "category": "libraries"
+  }, {
+    "gh": "ethicnology/dart-nostr",
+    "nips": [1, 2, 4, 5, 10, 15, 19, 20, 28, 50, 51],
+    "category": "libraries"
+  }, {
+    "gh": "coracle-social/navigatr",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "penpenpng/nip07-awaiter",
+    "nips": [7],
+    "category": "libraries"
+  }, {
+    "gh": "paulmillr/nip44",
+    "nips": [44],
+    "category": "libraries"
+  }, {
+    "gh": "Gruruya/nmostr",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "0xtlt/nostr_rust",
+    "nips": [1, 2, 4, 5, 9, 11, 13, 16, 25],
+    "category": "libraries"
+  }, {
+    "gh": "slaninas/nostr-bot",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "nostr-connect/connect",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "KiPSOFT/nostr-deno",
+    "nips": [1, 2, 4, 5, 8, 10, 19, 20],
+    "category": "libraries"
+  }, {
+    "gh": "jiftechnify/nostr-fetch",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "tcheeric/nostr-java",
+    "nips": [1, 2, 3, 4, 5, 8, 9, 12, 14, 15, 20, 23, 25, 28, 30, 32, 40, 42, 44, 46, 57, 99],
+    "category": "libraries"
+  }, {
+    "gh": "jb55/nostr-js",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "franzos/nostr-ts",
+    "nips": [1, 2, 4, 10, 11, 13, 14, 18, 23, 25, 36, 39, 40, 42, 45, 56, 19, 32, 57],
+    "category": "libraries"
+  }, {
+    "gh": "sebdeveloper6952/amberflutter",
+    "nips": [4, 19, 44],
+    "category": "libraries"
+  }, {
+    "gh": "ostyjs/nostr-hooks",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "dolu89/nostr-one",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "nostrver-se/nostr-php",
+    "nips": [1],
+    "category": "libraries"
+  }, {
+    "gh": "t4t5/nostr-react",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "CodyTseng/nostr-relay",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "dskvr/nostrwatch-js",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "adamritter/nostr-relaypool-ts",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "dtonon/nostr-ruby",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "mikedilger/nostr-types",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "penpenpng/nostr-typedef",
+    "nips": [7, 11],
+    "category": "libraries"
+  }, {
+    "gh": "cnixbtc/NostrKit",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "neeboo/schnorr_snap",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "lontivero/Nostra",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "sandwichfarm/nostr-geotags",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "vnuge/noscrypt",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "ostyjs/create-osty",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "penpenpng/rx-nostr",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "theborakompanioni/nostr-spring-boot-starter",
+    "nips": [1, 6, 9, 10, 13, 24, 40, 50],
+    "category": "libraries"
+  }, {
+    "gh": "MostroP2P/mostro-core",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "coracle-social/welshman",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "holgern/pynostr",
+    "nips": [1, 2, 3, 4, 5, 10, 11, 13, 15, 19, 26, 56, 65],
+    "category": "libraries"
   }
 ]
