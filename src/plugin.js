@@ -32,5 +32,6 @@ export default ({
       Post.website || Post.repository || ''
     Post.icon = Post.icon || ''
     Post.description = Post.description || ''
+    Post.isRepo = Post.parents.length >= 1 && !Post.isTaxonomy
   }
 })

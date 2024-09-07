@@ -54,8 +54,25 @@
     </section>
     <main class="container mx-auto my-5 d-none" style="max-width:600px">
     </main>
-    <div class="container" style="max-width:600px">
-      <div class="card my-3" each:="posts" not:="isTaxonomy">
+    <div class="container mb-5" style="max-width:600px">
+      <div not:="isRepo" class="list-group">
+        <a
+          each:="posts"
+          not:="isTaxonomy"
+          href:="ref"
+          class="list-group-item list-group-item-action ps-2 py-3 fs-5"
+        >
+          <div>
+            <span class="fw-bold" text:="title"></span>
+            <span
+              class="badge text-bg-dark rounded-pill float-end"
+              text:="count"
+            ></span>
+          </div>
+          <span text:="description"></span>
+        </a>
+      </div>
+      <div class="card my-3" if:="isRepo" each:="posts">
         <div class="card-body">
           <h4 class="card-title">
             <a
@@ -64,11 +81,6 @@
               text:="title"
             ></a>
             <span class="float-end fs-6">
-              <view-badge
-                href:="path"
-                info:="count"
-                context="dark fs-5"
-              ></view-badge>
               <view-badge
                 with:="taxonomies"
                 each:="language"
