@@ -551,5 +551,49 @@
     "gh": "smolgrrr/Wired",
     "nips": [],
     "category": "clients"
+  }, {
+    "gh": "hivetalk/hivetalksfu",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "jesterui/jesterui",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "TimA314/JiYou",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "shocknet/Lightning.Pub",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "erskingardner/listr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "emeceve/loquaz",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "mroxso/lumina-rocks-website",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "memberapp/memberapp.github.io",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "AaruBama/memestr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "BEEBSDONE/MeShell_Nodejs",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "Minds/minds",
+    "nips": [],
+    "category": "clients"
   }
 ]
