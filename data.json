@@ -683,5 +683,97 @@
     "gh": "nostrver-se/nuxstr",
     "nips": [7, 46, 19],
     "category": "clients"
+  }, {
+    "gh": "OstrichGram/OstrichGram",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "sepehr-safari/pinstr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "joel-st/postr-for-nostr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "wds4/pretty-good",
+    "nips": [1, 2, 4, 18, 25, 32, 33],
+    "category": "clients"
+  }, {
+    "gh": "mroxso/pollstr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "syusui-s/rabbit",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "benthecarman/scalastr",
+    "nips": [5],
+    "category": "clients"
+  }, {
+    "gh": "cynsar-foundation/second.exchange",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "dextryz/shipyard",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "shocknet/wallet2",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "Stackerstan/mindmachine",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "erdaltoprak/tamga",
+    "nips": [1, 2],
+    "category": "clients"
+  }, {
+    "gh": "nodetec/ublog",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "vilm3r/votestr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "github-tijlxyz/wikinostr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "fiatjaf/wikistr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "silencesoft/written",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "0xchat-app/0xchat-core",
+    "nips": [1, 2, 4, 5, 9, 10, 13, 17, 18, 19, 21, 23, 25, 27, 28, 29, 30, 33, 40, 42, 44, 47, 51, 57, 58, 59, 65, 78, 96, 98],
+    "category": "clients"
+  }, {
+    "gh": "pablof7z/highlighter",
+    "nips": [29, 88],
+    "category": "clients"
+  }, {
+    "gh": "verbiricha/habla.news",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "ptrio42/swarmstr.com",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "coracle-social/zephyr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "dluvian/voyage",
+    "nips": [1, 2, 6, 9, 10, 11, 14, 18, 19, 24, 25, 27, 34, 42, 51, 55, 65],
+    "category": "clients"
   }
 ]
