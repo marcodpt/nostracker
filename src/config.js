@@ -14,7 +14,7 @@ export default ({
     footer: {
       build: {
         icon: 'fa-solid fa-clock',
-        title: 'Last built: '+new Date().toISOString(),
+        title: 'Last built: '+new Date().toISOString().substr(0, 10),
         description: 'Date and time when the site was last generated.'
       },
       repo: {
