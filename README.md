@@ -47,7 +47,6 @@ In other cases, or if you need a new category, open an issue.
  - Add the version of each repository.
  - Add contributors to each repository.
  - Add RSS feed with updates.
- - Get an auth token from github for more API queries.
  - Enable other git hosts like
 [gitlab](https://about.gitlab.com/),
 [codeberg](https://codeberg.org/),
