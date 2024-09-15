@@ -1179,5 +1179,45 @@
     "gh": "toastr-space/keys-band",
     "nips": [4, 7],
     "category": "tools"
+  }, {
+    "gh": "sandwichfarm/notemine",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "abhay-raizada/nostr-polls",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "dtonon/oracolo",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "sepehr-safari/listr",
+    "nips": [7],
+    "category": "clients"
+  }, {
+    "gh": "fiatjaf/expensive-relay",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "Dolu89/nodestr-relay",
+    "nips": [1],
+    "category": "clients"
+  }, {
+    "gh": "dluvian/Nozzle",
+    "nips": [1, 2, 9, 10, 11, 18, 19, 21, 25, 27, 42, 65],
+    "category": "clients"
+  }, {
+    "gh": "styppo/hamstr",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "t4t5/flamingo",
+    "nips": [7],
+    "category": "tools"
+  }, {
+    "gh": "plantimals/nostr-pass",
+    "nips": [],
+    "category": "clients"
   }
 ]

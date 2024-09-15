@@ -1,8 +1,15 @@
 import {existsSync} from "https://deno.land/std@0.224.0/fs/exists.ts";
 
+const token = Deno.args[0]
 async function get (gh, path) {
   const url = `https://api.github.com/repos/${gh}${path}`
-  const res = await fetch(url)
+  const res = await fetch(url, {
+    headers: !token ? {} : {
+      'Authorization': 'Bearer '+token,
+      'X-GitHub-Api-Version': '2022-11-28'
+    }
+  })
+
   if (res.status != 200) {
     throw url
   }
