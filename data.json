@@ -146,19 +146,19 @@
   }, {
     "gh": "fiatjaf/nos2x",
     "nips": [7],
-    "category": "extensions"
+    "category": "tools"
   }, {
     "gh": "getAlby/lightning-browser-extension",
     "nips": [7],
-    "category": "extensions"
+    "category": "tools"
   }, {
     "gh": "OneKeyHQ/app-monorepo",
     "nips": [7],
-    "category": "extensions"
+    "category": "tools"
   }, {
     "gh": "diegogurpegui/nos2x-fox",
     "nips": [7],
-    "category": "extensions"
+    "category": "tools"
   }, {
     "gh": "scsibug/nostr-rs-relay",
     "nips": [1, 2, 5, 9, 11, 12, 15, 16, 20, 22, 28, 33, 40, 42],
@@ -166,23 +166,23 @@
   }, {
     "gh": "8go/matrix-nostr-bridge",
     "nips": [],
-    "category": "bridges"
+    "category": "relays"
   }, {
     "gh": "Asone/nostrss",
     "nips": [],
-    "category": "bridges"
+    "category": "relays"
   }, {
     "gh": "piraces/rsslay",
     "nips": [],
-    "category": "bridges"
+    "category": "relays"
   }, {
     "gh": "Cameri/smtp-nostr-gateway",
     "nips": [],
-    "category": "bridges"
+    "category": "relays"
   }, {
     "gh": "geoffwhittington/meshtastic-bridge",
     "nips": [],
-    "category": "bridges"
+    "category": "relays"
   }, {
     "gh": "monty888/nostrpy",
     "nips": [],
@@ -1082,6 +1082,102 @@
   }, {
     "gh": "nostrband/nostr-embed",
     "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "yukibtc/keechain",
+    "nips": [46],
+    "category": "tools"
+  }, {
+    "gh": "lnbits/nostr-signing-device",
+    "nips": [46],
+    "category": "tools"
+  }, {
+    "gh": "nostr-connect/nostrum",
+    "nips": [46],
+    "category": "tools"
+  }, {
+    "gh": "greenart7c3/amber",
+    "nips": [46],
+    "category": "tools"
+  }, {
+    "gh": "eyelight/glasnostr",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "tenkoh/go-pubmine",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "TP-Lab/key-generator",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "lacaulac/nostr-pubminer",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "chawyehsu/nostr-vanity-address-generator",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "tonyinit/nostrogen",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "grunch/rana",
+    "nips": [13],
+    "category": "tools"
+  }, {
+    "gh": "B3nac/nostr_keygen",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "asmogo/nws",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "neilck/aka-extension",
+    "nips": [4, 7],
+    "category": "tools"
+  }, {
+    "gh": "block-core/blockcore-wallet",
+    "nips": [7],
+    "category": "tools"
+  }, {
+    "gh": "lnbits/horse",
+    "nips": [4, 7],
+    "category": "tools"
+  }, {
+    "gh": "lightning-digital-entertainment/nodestr",
+    "nips": [7],
+    "category": "tools"
+  }, {
+    "gh": "ursuscamp/nostore",
+    "nips": [4, 7],
+    "category": "tools"
+  }, {
+    "gh": "susumuota/nostr-keyx",
+    "nips": [4, 7],
+    "category": "tools"
+  }, {
+    "gh": "jinglescode/nostr-password-manager",
+    "nips": [7],
+    "category": "tools"
+  }, {
+    "gh": "signum-network/signum-xt-wallet",
+    "nips": [7],
+    "category": "tools"
+  }, {
+    "gh": "TP-Lab/TokenPocket",
+    "nips": [7],
+    "category": "tools"
+  }, {
+    "gh": "fiatjaf/wen",
+    "nips": [7],
+    "category": "tools"
+  }, {
+    "gh": "toastr-space/keys-band",
+    "nips": [4, 7],
     "category": "tools"
   }
 ]
