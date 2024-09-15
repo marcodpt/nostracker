@@ -144,6 +144,10 @@
     "nips": [],
     "category": "libraries"
   }, {
+    "gh": "sandwichfarm/notemine",
+    "nips": [13],
+    "category": "tools"
+  }, {
     "gh": "fiatjaf/nos2x",
     "nips": [7],
     "category": "extensions"
@@ -345,6 +349,10 @@
     "category": "libraries"
   }, {
     "gh": "jiftechnify/nostr-fetch",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "sandwichfarm/nostrawl",
     "nips": [],
     "category": "libraries"
   }, {
