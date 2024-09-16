@@ -1188,10 +1188,6 @@
     "nips": [4, 7],
     "category": "tools"
   }, {
-    "gh": "sandwichfarm/notemine",
-    "nips": [],
-    "category": "libraries"
-  }, {
     "gh": "abhay-raizada/nostr-polls",
     "nips": [],
     "category": "clients"
