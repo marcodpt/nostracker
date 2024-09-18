@@ -40,10 +40,10 @@ Promise.all(data.map(({gh}) => get(gh, ''))).then(GH => {
     repo.description = GH[i].description
     repo.repository = GH[i].html_url
     repo.website = GH[i].homepage
-    repo.stars = GH[i].stargazers_count
+    repo.stars = GH[i].stargazers_count || 0
     repo.language = GH[i].language
-    repo.forks = GH[i].forks_count
-    repo.issues = GH[i].open_issues
+    repo.forks = GH[i].forks_count || 0
+    repo.issues = GH[i].open_issues || 0
     repo.license = GH[i].license?.spdx_id
     repo.tags = GH[i].topics.join(', ')
     repo.since = GH[i].created_at
