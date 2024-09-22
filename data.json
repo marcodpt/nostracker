@@ -1483,5 +1483,9 @@
     "gh": "SovrynMatt/Nostr-Website-Button-Design",
     "nips": [],
     "category": "informations"
+  }, {
+    "gh": "aljazceru/awesome-nostr",
+    "nips": [],
+    "category": "informations"
   }
 ]
