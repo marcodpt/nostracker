@@ -3,7 +3,15 @@ fetch(`https://raw.githubusercontent.com/aljazceru/awesome-nostr/refs/heads/main
   then(res => res.text()).
   then(md => {
     var data = JSON.parse(Deno.readTextFileSync('data.json'))
-    const GH = data.map(({gh}) => gh)
+    const GH = []
+    data.forEach(({gh}) => {
+      const repo = gh.split('/').filter(x => x).join('/')
+      if (GH.indexOf(repo) < 0) {
+        GH.push(repo)
+      } else {
+        console.log('DUPLICATED: '+repo)
+      }
+    })
     const Missing = []
     const isMissing = repo => Missing.indexOf(repo) < 0 && GH.indexOf(repo) < 0
     const test = re => {
@@ -19,11 +27,12 @@ fetch(`https://raw.githubusercontent.com/aljazceru/awesome-nostr/refs/heads/main
       } while (m)
     }
     test(/\(https:\/\/img.shields.io\/github\/stars\/([^\/]+)\/([^\/\.\?\)]+)/g)
-    test(/\(https:\/\/github.com\/([^\/]+)\/([^\/\.\?\)]+)/g)
+    test(/\(https:\/\/github.com\/([^\/]+)\/([^\/\.\?\)\#]+)/g)
 
     Deno.writeTextFileSync(
       'output/gh.json', 
       JSON.stringify(Missing.map(gh => ({
+        link: `https://github.com/${gh}`,
         gh,
         'nips': [],
         'category': ''

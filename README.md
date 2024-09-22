@@ -42,7 +42,6 @@ accepted.
 In other cases, or if you need a new category, open an issue.
 
 ## 🔧 TODO
- - Add as many repositories as I can.
  - Add information about archived repositories.
  - Add the version of each repository.
  - Add contributors to each repository.

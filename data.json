@@ -80,6 +80,10 @@
     "nips": [],
     "category": "clients"
   }, {
+    "gh": "mapboss/wherostr_social",
+    "nips": [],
+    "category": "clients"
+  }, {
     "gh": "lnbits/nostrmarket",
     "nips": [15, 33, 4, 99],
     "category": "clients"
@@ -122,10 +126,6 @@
   }, {
     "gh": "nbd-wtf/go-nostr",
     "nips": [4, 5, 6, 10, 11, 13, 19, 29, 31, 34, 42, 44, 46, 49, 52, 53, 54, 86, 94, 96],
-    "category": "libraries"
-  }, {
-    "gh": "Kukks/NNostr",
-    "nips": [],
     "category": "libraries"
   }, {
     "gh": "nbd-wtf/nostr-tools",
@@ -244,16 +244,8 @@
     "nips": [],
     "category": "relays"
   }, {
-    "gh": "barkyq/gnost-relay",
-    "nips": [1, 9, 11, 12, 15, 16, 20, 26, 28, 33, 40, 42],
-    "category": "relays"
-  }, {
     "gh": "lpicanco/knostr",
     "nips": [1, 2, 4, 9, 11, 12, 15, 16, 20, 28, 50],
-    "category": "relays"
-  }, {
-    "gh": "atdixon/me.untethr.nostr-relay",
-    "nips": [1, 2, 4, 11, 12, 15, 16, 20, 22, 42],
     "category": "relays"
   }, {
     "gh": "monty888/monstr",
@@ -1008,10 +1000,6 @@
     "nips": [],
     "category": "tools"
   }, {
-    "gh": "jb55/nostril",
-    "nips": [],
-    "category": "tools"
-  }, {
     "gh": "Cameri/nostrillery",
     "nips": [],
     "category": "tools"
@@ -1223,5 +1211,277 @@
     "gh": "plantimals/nostr-pass",
     "nips": [],
     "category": "clients"
+  }, {
+    "gh": "nobu-maeda/n3xb",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "pablof7z/nostr-data-vending-machine",
+    "nips": [90],
+    "category": "tools"
+  }, {
+    "gh": "pablof7z/dvm-references",
+    "nips": [90],
+    "category": "tools"
+  }, {
+    "gh": "Kodylow/nostr-dvm-ts",
+    "nips": [90],
+    "category": "tools"
+  }, {
+    "gh": "dtdannen/dvmdash",
+    "nips": [90],
+    "category": "tools"
+  }, {
+    "gh": "believethehype/nostrdvm",
+    "nips": [90],
+    "category": "libraries"
+  }, {
+    "gh": "dtdannen/ezdvm",
+    "nips": [90],
+    "category": "libraries"
+  }, {
+    "gh": "nostr-protocol/nips",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "nostr-protocol/nostr",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "marcodpt/nostracker",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "mikedilger/chorus",
+    "nips": [1, 4, 9, 11, 40, 42, 59, 65],
+    "category": "relays"
+  }, {
+    "gh": "guakamoli/denostr",
+    "nips": [1, 2, 4, 9, 11, 12, 13, 15, 16, 20, 22, 26, 28, 33, 38, 40],
+    "category": "relays"
+  }, {
+    "gh": "0ceanslim/grain",
+    "nips": [9, 11],
+    "category": "relays"
+  }, {
+    "gh": "bezysoftware/netstr",
+    "nips": [1, 2, 4, 9, 11, 13, 17, 40, 42, 45, 70],
+    "category": "relays"
+  }, {
+    "gh": "UTXOnly/nost-py",
+    "nips": [1, 2, 4, 9, 11, 15, 16, 25, 50, 99],
+    "category": "relays"
+  }, {
+    "gh": "lontivero/nostra",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "max21dev/groups-relay",
+    "nips": [29],
+    "category": "relays"
+  }, {
+    "gh": "sandwichfarm/nostr-watch",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "ghobs91/agora",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "eskema/alphaama",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "0ceanslim/badger",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "objectwizard/BlazeJump",
+    "nips": [46],
+    "category": "clients"
+  }, {
+    "gh": "coracle-social/legacy-chat",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "coracle-social/legacy-dms",
+    "nips": [4],
+    "category": "clients"
+  }, {
+    "gh": "codytseng/danmakustr",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "stackerstan/mindmachine",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "verbiricha/habla",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "vishalxl/Nostr-Clients-Features-List",
+    "nips": [5, 42],
+    "category": "informations"
+  }, {
+    "gh": "nostorg/clients",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "nostr-dev-kit/ndk",
+    "nips": [1, 4, 18, 42, 57, 89, 90, 7, 46, 65, 47, 96],
+    "category": "libraries"
+  }, {
+    "gh": "wilsonsilva/nostr",
+    "nips": [1, 2, 4, 19],
+    "category": "clients"
+  }, {
+    "gh": "nextdebug/nipf",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "xbol0/nanostr",
+    "nips": [5],
+    "category": "tools"
+  }, {
+    "gh": "jigglycrumb/nostr-address-provider",
+    "nips": [5],
+    "category": "tools"
+  }, {
+    "gh": "KiPSOFT/nostr-nip05-service",
+    "nips": [5],
+    "category": "tools"
+  }, {
+    "gh": "nobu-maeda/crusty-n3xb",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "MostroP2P/mostro-cli",
+    "nips": [],
+    "category": "clients"
+  }, {
+    "gh": "MostroP2P/mostro-web",
+    "nips": [7],
+    "category": "clients"
+  }, {
+    "gh": "onekeyhq/app-monorepo",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "lnbits/lnbits",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "believethehype/nostdress",
+    "nips": [5, 57],
+    "category": "tools"
+  }, {
+    "gh": "ZeusLN/zeus",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "UTXOnly/zap_server",
+    "nips": [57],
+    "category": "tools"
+  }, {
+    "gh": "pjv/strfry_personal_docker",
+    "nips": [20, 65, 11],
+    "category": "relays"
+  }, {
+    "gh": "johnongit/INOSTA-Nostr-Img-Service",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "KoalaSat/logseq-nostr-sync",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "satscoffee/nostr_icons",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "SnowCait/nostr-playground",
+    "nips": [7],
+    "category": "clients"
+  }, {
+    "gh": "dtonon/nostr-ruby-playground",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "adamdecaf/nostr-book",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "mbarulli/nostr-logo",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "nostrability/nostrability",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "supertestnet/vanilla-js-nostr",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "nostr-jp/awesome-nostr-japan",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "orthzar/awesome-nostr-possibilities",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "zapstore/zapstore",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "aitechguy/nostr-address-book",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "rajarshimaitra/rust-nostr",
+    "nips": [],
+    "category": "libraries"
+  }, {
+    "gh": "kehiy/persian-nostr-book",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "dezh-tech/immortal",
+    "nips": [],
+    "category": "relays"
+  }, {
+    "gh": "fiatjaf/relay29",
+    "nips": [29],
+    "category": "relays"
+  }, {
+    "gh": "fiatjaf/khatru",
+    "nips": [11, 86],
+    "category": "libraries"
+  }, {
+    "gh": "PrimalHQ/primal-caching-service",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "quentintaranpino/NIP96-compatible-servers",
+    "nips": [96],
+    "category": "informations"
+  }, {
+    "gh": "hzrd149/blossom",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "NostrDice/nostrdice",
+    "nips": [],
+    "category": "tools"
+  }, {
+    "gh": "BlockChainCaffe/Nostr-Relay-Setup-Guide",
+    "nips": [],
+    "category": "informations"
+  }, {
+    "gh": "SovrynMatt/Nostr-Website-Button-Design",
+    "nips": [],
+    "category": "informations"
   }
 ]
