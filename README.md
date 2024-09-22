@@ -46,11 +46,14 @@ In other cases, or if you need a new category, open an issue.
  - Add the version of each repository.
  - Add contributors to each repository.
  - Add RSS feed with updates.
+ - Fix sorting bug in some sections and zero stars.
+ - Sort and Filter funcionalities. 
  - Enable other git hosts like
 [gitlab](https://about.gitlab.com/),
 [codeberg](https://codeberg.org/),
 [sourcehut](https://sourcehut.org/),
 etc.
+ - NIPs JSON Schema
  - Improve the SSG and the template engine and better explain their use.
  - Integration of the website into the nostr network.
  - Enable comments through nostr.
