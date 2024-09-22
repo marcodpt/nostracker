@@ -7,6 +7,6 @@ if [ ! -z $1 ]; then
   rm -rf docs/tools
 fi
 
-deno run --allow-read --allow-write --allow-net src/build.js $1
-deno run --allow-read --allow-write ../hippo/index.js ../nostracker/src/config.js
+deno run -RWN src/build.js $1
+deno run -RW ../hippo/index.js ../nostracker/src/config.js
 #minirps docs
