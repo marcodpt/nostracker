@@ -5,6 +5,7 @@ if [ ! -z $1 ]; then
   rm -rf docs/relays
   rm -rf docs/libraries
   rm -rf docs/tools
+  rm -rf docs/informations
 fi
 
 deno run -RWN src/build.js $1

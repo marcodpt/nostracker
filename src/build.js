@@ -1,21 +1,7 @@
 import {existsSync} from "https://deno.land/std@0.224.0/fs/exists.ts";
+import {github} from './lib.js'
 
 const token = Deno.args[0]
-async function get (gh, path) {
-  const url = `https://api.github.com/repos/${gh}${path}`
-  const res = await fetch(url, {
-    headers: !token ? {} : {
-      'Authorization': 'Bearer '+token,
-      'X-GitHub-Api-Version': '2022-11-28'
-    }
-  })
-
-  if (res.status != 200) {
-    throw url
-  }
-  const data = await res.json()
-  return data
-}
 
 var data = JSON.parse(Deno.readTextFileSync('data.json'))
 console.log('Total: '+data.length)
@@ -25,7 +11,7 @@ data = data.filter(repo => {
 })
 console.log('New: '+data.length)
 
-Promise.all(data.map(({gh}) => get(gh, ''))).then(GH => {
+Promise.all(data.map(({gh}) => github(token, `repos/${gh}`))).then(GH => {
   data.forEach((repo, i) => {
     console.log(repo.gh)
     delete repo.gh
