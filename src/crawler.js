@@ -1,15 +1,14 @@
 //deno -RWN src/crawler.js
-import http from 'https://cdn.jsdelivr.net/npm/redaxios@0.5.1/+esm'
+import {get} from './lib.js'
 
 const dir = 'output'
 const repo = 'https://raw.githubusercontent.com/aljazceru/awesome-nostr'
 
-http.get(`${repo}/refs/heads/main/README.md`).then(res => {
+get(`${repo}/refs/heads/main/README.md`).then(md => {
   Deno.mkdirSync(dir, {
     recursive: true
   })
 
-  const md = res.data
   Deno.writeTextFileSync(`${dir}/README.md`, md)
   var data = JSON.parse(Deno.readTextFileSync('data.json'))
   const GH = []
