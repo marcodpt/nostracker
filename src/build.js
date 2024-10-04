@@ -1,11 +1,11 @@
-import {existsSync} from "https://deno.land/std@0.224.0/fs/exists.ts";
+import {existsSync} from 'https://deno.land/std@0.224.0/fs/exists.ts'
 import {github} from './lib.js'
+import src from '../data.json' with {type: 'json'}
 
 const token = Deno.args[0]
 
-var data = JSON.parse(Deno.readTextFileSync('data.json'))
-console.log('Total: '+data.length)
-data = data.filter(repo => {
+console.log('Total: '+src.length)
+const data = src.filter(repo => {
   repo.path = repo.gh.split('/')[1]
   return !existsSync(`docs/${repo.category}/${repo.path}.html`)
 })
