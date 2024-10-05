@@ -13,15 +13,18 @@ try {
 
 console.log('Total: '+src.length)
 const data = src.filter(({gh}) =>
-  !output.filter(({full_name}) => full_name == gh).length
+  !output.filter(({repo}) => repo == gh).length
 )
 console.log('New: '+data.length)
 
-Promise.all(data.map(({gh}) => github(token, `repos/${gh}`))).then(GH => {
-  console.log(GH.map(({full_name}) => full_name).join('\n'))
+Promise.all(data.map(({gh}) => github(token, `repos/${gh}`))).then(Repos => {
+  Repos.forEach((repo, i) => {
+    repo.repo = data[i].gh
+  })
+  console.log(Repos.map(({repo}) => repo).join('\n'))
   Deno.mkdirSync(dir, {
     recursive: true
   })
-  output.concat(GH)
-  Deno.writeTextFileSync(target, JSON.stringify(GH, undefined, 2))
+  output.concat(Repos)
+  Deno.writeTextFileSync(target, JSON.stringify(output, undefined, 2))
 })
