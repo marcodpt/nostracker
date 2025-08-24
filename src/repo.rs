@@ -1,20 +1,13 @@
 use serde_json::from_str;
 use serde_derive::Deserialize;
+use anyhow::anyhow;
 
 #[derive(Deserialize)]
 pub struct Repo {
-    pub gh: String,
+    gh: String,
     nips: Vec<u8>,
-    pub category: String
+    category: String
 }
-
-/*const nips = []
-repo.nips.forEach(nip => {
-  if (nips.indexOf(nip) < 0) {
-    nips.push(nip)
-  }
-})
-repo.nips = nips.map(nip => 'NIP'+String(nip).padStart(2, '0'))*/
 
 impl Repo {
     pub fn list () -> anyhow::Result<Vec<Repo>> {
@@ -33,5 +26,23 @@ impl Repo {
         nips.into_iter().map(|nip| {
             format!("NIP{:0>2}", nip)
         }).collect::<Vec<String>>()
+    }
+
+    pub fn category(&self) -> anyhow::Result<String> {
+        if
+            &self.category == "clients" ||
+            &self.category == "relays" ||
+            &self.category == "libraries" ||
+            &self.category == "tools" ||
+            &self.category == "informations"
+        {
+            Ok(self.category.to_string())
+        } else {
+            Err(anyhow!("Unkown category: {}", &self.category))
+        }
+    }
+
+    pub fn path (&self) -> &str {
+        &self.gh
     }
 }

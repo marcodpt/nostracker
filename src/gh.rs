@@ -12,14 +12,15 @@ struct License {
 
 #[derive(Deserialize)]
 pub struct GitHub {
+    repo: Option<String>,
     name: String,
-    description: String,
+    description: Option<String>,
     html_url: String,
-    homepage: String,
-    stargazers_count: Option<u64>,
-    language: String,
-    forks_count: Option<u64>,
-    open_issues: Option<u64>,
+    homepage: Option<String>,
+    stargazers_count: u64,
+    language: Option<String>,
+    forks_count: u64,
+    open_issues: u64,
     topics: Vec<String>,
     license: Option<License>,
     created_at: String,
@@ -28,29 +29,51 @@ pub struct GitHub {
 }
 
 impl GitHub {
-    pub fn new (client: &Client, repo: &Repo) -> anyhow::Result<Data> {
-        let url = format!("https://api.github.com/repos/{}", repo.gh);
+    pub fn new (client: &Client, path: &str) -> anyhow::Result<GitHub> {
+        let url = format!("https://api.github.com/repos/{}", path);
         let raw = get(&client, &url)?;
         let gh: GitHub = from_str(&raw)?;
 
+        Ok(gh)
+    }
+
+    pub fn data (self, repo: &Repo) -> anyhow::Result<Data> {
         Ok(Data {
-            category: repo.category.to_string(),
+            category: repo.category()?,
             nips: repo.nips(),
-            title: gh.name,
-            description: gh.description,
-            repository: gh.html_url,
-            website: gh.homepage,
-            stars: gh.stargazers_count.unwrap_or(0),
-            language: gh.language,
-            forks: gh.forks_count.unwrap_or(0),
-            issues: gh.open_issues.unwrap_or(0),
-            license: match gh.license {
+            title: self.name,
+            description: self.description.unwrap_or(String::new()),
+            repository: self.html_url,
+            website: self.homepage.unwrap_or(String::new()),
+            stars: self.stargazers_count,
+            language: self.language.unwrap_or(String::new()),
+            forks: self.forks_count,
+            issues: self.open_issues,
+            license: match self.license {
                 None => String::new(),
                 Some(license) => license.spdx_id
             },
-            tags: gh.topics.join(", "),
-            since: gh.created_at,
-            last: gh.pushed_at
+            tags: self.topics.join(", "),
+            since: self.created_at,
+            last: self.pushed_at
         })
+    }
+
+    pub fn output (repos: &Vec<Repo>) -> anyhow::Result<Vec<Data>> {
+        let list: Vec<GitHub> = from_str(include_str!("../output/api.json"))?;
+
+        let mut result: Vec<Data> = Vec::new();
+        for row in list {
+            for repo in repos {
+                if let Some(ref path) = row.repo {
+                    if path == repo.path() {
+                        result.push(row.data(&repo)?);
+                        break;
+                    }
+                }
+            }
+        }
+
+        Ok(result)
     }
 }
