@@ -25,7 +25,7 @@ pub struct GitHub {
     license: Option<License>,
     created_at: String,
     pushed_at: String,
-    //archived: bool,
+    archived: bool,
 }
 
 impl GitHub {
@@ -55,7 +55,8 @@ impl GitHub {
             },
             tags: self.topics.join(", "),
             since: self.created_at,
-            last: self.pushed_at
+            last: self.pushed_at,
+            archived: self.archived
         })
     }
 

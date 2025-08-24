@@ -8,6 +8,7 @@ use reqwest::blocking::Client;
 use serde_json::to_string_pretty;
 use repo::Repo;
 use gh::GitHub;
+use utils::get;
 
 fn main() -> anyhow::Result<()> {
     let repos = Repo::list()?;
@@ -19,6 +20,13 @@ fn main() -> anyhow::Result<()> {
     data.log()?;
     let data = GitHub::output(&repos)?;
     fs::write("output/data2.json", to_string_pretty(&data)?)?;
+
+    let md = get(&client, "\
+        https://raw.githubusercontent.com\
+        /aljazceru/awesome-nostr\
+        /refs/heads/main/README.md\
+    ")?;
+    fs::write("output/README2.md", md)?;
 
     Ok(())
 }

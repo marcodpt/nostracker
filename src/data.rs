@@ -16,7 +16,8 @@ pub struct Data {
     pub license: String,
     pub tags: String,
     pub since: String,
-    pub last: String
+    pub last: String,
+    pub archived: bool
 }
 
 impl Data {

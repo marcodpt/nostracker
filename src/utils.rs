@@ -8,8 +8,8 @@ pub fn get (client: &Client, url: &str) -> anyhow::Result<String> {
         .header(USER_AGENT, "nostracker")
         .send()?.text()?;
 
-    let response: Value = from_str(&raw)?;
-    println!("{}", to_string_pretty(&response)?);
+    //let response: Value = from_str(&raw)?;
+    //println!("{}", to_string_pretty(&response)?);
 
     Ok(raw)
 }
